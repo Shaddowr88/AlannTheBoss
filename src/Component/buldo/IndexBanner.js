@@ -19,9 +19,9 @@ import Hidden from "@material-ui/core/Hidden";
                         <Hidden only={['xl','md','lg']}>
                             <div style={{position:"relative", width:"4em", border:"black",}}>
                                 <img className="img" src={INTRO} alt="" style={{position:"absolute",
-                                    filter: "blur(4px)","height": "20em", marginTop:"3em",top: "14em", }}/>
+                                    filter: "blur(4px)","height": "15em", marginTop:"3em",top: "30em", left:"3em" }}/>
                                 <img className="img" src={INTRO} alt="" style={{position:"absolute",
-                                    height:"20em", marginTop:"3em",top: "14em"}} />
+                                    height:"15em", marginTop:"3em",top: "30em", left:"3em" }} />
                             </div>
                         </Hidden>
                     </Grid>
@@ -39,12 +39,12 @@ import Hidden from "@material-ui/core/Hidden";
                                     </Grid>
                                 </Hidden>
                                 <Hidden only={['xl','md','lg']}>
-                                    <Grid container lg={5} xs={2} alignItems="flex-end"
+                                    <Grid container lg={5} xs={2} 
                                           style={{fontSize: "6em", paddinTop: "2em", marginTop: "1em", color: "white"}}>
                                         Loic <span >SUNVÉ</span> <br/>
                                     </Grid>
-                                    <Grid container lg={5} xs={14} style={{fontSize: "2em", color: "white"}}>
-                                        <span style={{color: "#F27127"}}> DESIGN & DEVELOPPEMENT WEB </span>
+                                    <Grid container lg={5} xs={12} style={{fontSize: "2em", color: "white"}}>
+                                        <span style={{color: "white"}}> DESIGN & DEVELOPPEMENT WEB </span>
                                     </Grid>
                                 </Hidden>
                             </Grid>

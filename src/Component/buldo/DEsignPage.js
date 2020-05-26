@@ -10,7 +10,7 @@ class DesignPage extends React.Component {
                      spacing={4} item xs={12} sm={12} >
             <Grid container sm={6} md={8} justify="flex-start" alignItems="center"
                   style={{paddingLeft: "1em", color: "white", marginLeft:"3em"}}>
-                <Grid item xs={12} sm={9} style={{borderBottom: "solid",}}>
+                <Grid item xs={12} sm={9} >
                     <h1 style={{fontSize:"4em"}}> Graphiste freelance </h1>
                     <h3> depuis trois ans, je collabore à la création de votre identité de marque
                         et conçois les outils print et digitaux (logo, papeterie, packaging, siteWeb) nécessaires

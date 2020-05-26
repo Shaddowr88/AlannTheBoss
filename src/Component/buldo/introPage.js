@@ -33,7 +33,7 @@ class IntroPage extends React.Component {
             <Grid item xs={12} sm={12} container direction="row">
                 <Grid  xs={12} sm={3} style={{padding:"1em",backgroundColor:"#F2A922", margin:"1em",
                     listStyleType: "disc", borderRadius:"8px", boxShadow: "10px 11px 8px -5px rgba(0,0,0,0.27)"}}>
-                    <h3> Design</h3>
+                    <h3>DESIGN</h3>
 
                     <ol style={{listStyleType:"circle"}}>
                         <li>Création  logo, cartes de visite</li> <br/>
@@ -47,7 +47,7 @@ class IntroPage extends React.Component {
                 </Grid>
                 <Grid xs={12} sm={4} style={{padding:"1em", backgroundColor:"#F27127", margin:"1em", borderRadius:"8px",
                     boxShadow: "10px 11px 8px -5px rgba(0,0,0,0.27)"}}>
-                    <h3> Dev</h3>
+                    <h3>DEV</h3>
 
                     <ol style={{listStyleType: "circle"}}>
                         <li>Site vitrine, e-commerce, intranet</li><br/>
@@ -63,7 +63,7 @@ class IntroPage extends React.Component {
                 </Grid>
                 <Grid xs={12} sm={3} style={{padding:"1em",backgroundColor:"#F2A922", margin:"1em", borderRadius:"8px",
                     boxShadow: "10px 11px 8px -5px rgba(0,0,0,0.27)"}}>
-                    <h3> Soft Skill's</h3>
+                    <h3>SOFT SKILL'S</h3>
 
                     <ol style={{listStyleType: "circle"}}>
                         <li>Créatif</li><br/>
