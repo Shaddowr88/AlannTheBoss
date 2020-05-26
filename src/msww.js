@@ -11,7 +11,6 @@ import Bison01 from "./static/images/Bizon/imacbizon.png";
 import Bison02 from "./static/images/Bizon/Bizzon.png";
 import Bison03 from "./static/images/Bizon/Mokebizoniphone.png";
 import Lima from "./static/images/notebook-1280538_1920.jpg";
-import Marga from "./static/images/introOK.jpg";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import PropTypes from "prop-types";
@@ -25,22 +24,15 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 
 
 export default function MswwPage() {
-
     const theme = useTheme();
     const [value, setValue] = React.useState(0);
-
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
-    };
-
-    const handleChangeIndex = (index) => {
-        setValue(index);
-    };
+    const handleChange = (event,newValue) => { setValue(newValue)};
+    const handleChangeIndex = (index) => { setValue(index)};
 
     const IMAGES = [
         { id: 0, title: "MS WOODWORK",textes: "presentation de MS WOODWORK",texte01: "presentation de projet 01", label01:" label01",label02:" label02",label03:"label03",
             title02: "MS WOODWORK Menuisier", texte02: "Identité visuelle de pme spécialiser dans l'agencement et la conception de meuble sur mesure\n" +
-                "    de fonctionnalité\n" +  "\n" + "    Gestion des utilisateurs, rôle et autorisation par utilisateur.", tdescribe02: "Espace de gestion des contacts.\n" +
+                "    de fonctionnalité Gestion des utilisateurs, rôle et autorisation par utilisateur.", tdescribe02: "Espace de gestion des contacts.\n" +
                 "        Un Dashboard pour visualiser rapidement des événements et dépenses.\n" +
                 "        Interfaces Multi compte.", techno02: "Laravel : mySQL", color: "DarkOrchid", src:FLORAL,
                 sample00:"John", sample01:MSWW01 , sample02:MSWW02 , sample03:MSWW03 , sample04:MSWW04, sample05:"Jones"
@@ -54,10 +46,8 @@ export default function MswwPage() {
                 "Interfaces Multi compte"
             ,
             title03: "Bizon Un CRM en mode SAAS",
-            texte03: "Le CRM bizon , est un gestionnaire de biens immobiliers qui permet de bénéficier de fonctionnalité\n" +
-                "\n" + "    Gestion des utilisateurs, rôle et autorisation par utilisateur.",
-            tdescribe02: "Espace de gestion des contacts.\n" +
-                "        Un Dashboard pour visualiser rapidement des événements et dépenses.\n" +
+            texte03: "Le CRM bizon , est un gestionnaire de biens immobiliers qui permet de bénéficier de fonctionnalité Gestion des utilisateurs, rôle et autorisation par utilisateur.",
+            tdescribe02: "Espace de gestion des contacts. Un Dashboard pour visualiser rapidement des événements et dépenses.\n" +
                 "        Interfaces Multi compte.",
             techno02: "Laravel : mySQL", color: "DarkOrchid", src:Lima,
             sample00:"John", sample01:Bison01 , sample02:Bison02 , sample03:Bison03 , sample05:"Jones"},
@@ -77,13 +67,15 @@ export default function MswwPage() {
 
     ];
 
-    function Image(props) {
+   /* function Image(props) {
         return (
             <div>
                 <img style={{ width: "100%", height: 400, }} color={image.color} src={image.src}  alt="complex"  />
             </div>
         );
     }
+
+    */
     function TabPanel(props) {
         const { children, value, index, ...other } = props;
 

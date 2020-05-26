@@ -1,8 +1,4 @@
 import React from 'react';
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import ScrollspyNav from "react-scrollspy-nav";
-import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 

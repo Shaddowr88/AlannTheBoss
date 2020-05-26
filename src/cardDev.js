@@ -55,7 +55,7 @@ export default function CardDev() {
                                 style={{textDecoration: "none", color:"white"}}
                                 key={i.id}
                                 to={{ pathname:`/ProjetMsw/${i.id}`,}}>
-                                <Typography gutterBottom variant="subtitle1" style={{borderRight:"solid",}}>
+                                <Typography gutterBottom variant="subtitle1" >
                                     {i.title}
                                 </Typography> </Link>
                             <Typography variant="body2" gutterBottom style={{marginBottom:"2em"}} >

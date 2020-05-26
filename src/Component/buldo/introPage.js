@@ -31,7 +31,7 @@ class IntroPage extends React.Component {
             </Grid>
 
             <Grid item xs={12} sm={12} container direction="row">
-                <Grid  xs={12} sm={3} style={{padding:"1em",backgroundColor:"#F2A922", margin:"1em",
+                <Grid  xs={12} sm={12} md={3} style={{padding:"1em",backgroundColor:"#F2A922", margin:"1em",
                     listStyleType: "disc", borderRadius:"8px", boxShadow: "10px 11px 8px -5px rgba(0,0,0,0.27)"}}>
                     <h3>DESIGN</h3>
 
@@ -45,7 +45,7 @@ class IntroPage extends React.Component {
                     </ol>
 
                 </Grid>
-                <Grid xs={12} sm={4} style={{padding:"1em", backgroundColor:"#F27127", margin:"1em", borderRadius:"8px",
+                <Grid xs={12} sm={12} md={3} style={{padding:"1em", backgroundColor:"#F27127", margin:"1em", borderRadius:"8px",
                     boxShadow: "10px 11px 8px -5px rgba(0,0,0,0.27)"}}>
                     <h3>DEV</h3>
 
@@ -61,7 +61,7 @@ class IntroPage extends React.Component {
                         <li>Application des bonne pratique du web</li><br/>
                     </ol>
                 </Grid>
-                <Grid xs={12} sm={3} style={{padding:"1em",backgroundColor:"#F2A922", margin:"1em", borderRadius:"8px",
+                <Grid xs={12} sm={12} md={3} style={{padding:"1em",backgroundColor:"#F2A922", margin:"1em", borderRadius:"8px",
                     boxShadow: "10px 11px 8px -5px rgba(0,0,0,0.27)"}}>
                     <h3>SOFT SKILL'S</h3>
 

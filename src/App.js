@@ -5,8 +5,6 @@ import DEsignPage from "./Component/buldo/DEsignPage";
 import ProjectPage from "./Component/buldo/projectPage";
 import ToolBarApp from "./Component/ Steering/toolBar";
 import $ from "jquery";
-import DEMO from "./static/images/Banner.png";
-import ILLUS2 from "./static/images/illustration02.png";
 import BannerIndex from "./Component/buldo/IndexBanner";
 import Hidden from "@material-ui/core/Hidden";
 import BottomToolBarApp from "./Component/ Steering/bottumToolBar";
@@ -20,6 +18,7 @@ class App extends Component {
         $(document).ready(function() {
             $(window).scroll(function() {
                 if ($(document).scrollTop() < 100) {
+                    console.log ("scrollTop");
                     $(".Welcome").hide();
                     $(".NavName").css("color", "white");
                 } else{
@@ -32,7 +31,8 @@ class App extends Component {
                     $(".mydiv2").fadeOut( "slow" );
                 }
                 if ($(document).scrollTop() > 1890) {
-                    $(".mydiv").show( 1000 );
+                    $(".mydiv").show( 500 );
+                    $(".mydiv").fadeIn( 1000 );
                 } else {
                     $(".mydiv").fadeOut( "slow" );
                 }
@@ -69,68 +69,53 @@ class App extends Component {
                                     <Typography variant="h2" component="h2" > DESIGNS</Typography>
                                 </Grid>
                                 <Grid md={12} xs={12}>
-                                    <Typography variant="h4" gutterBottom style={{fontStyle: "italic", fontWeight:"lighter"}}>
+                                    <p style={{fontStyle: "italic", fontWeight:"lighter", fontSize:"2em"}}>
                                 ne dépendent pas du support que l’on utilise. Pour créer un design de qualité,
                                 il faut bien réfléchir à ce que l’on veut faire et au cadre dans lequel cela s’inscrit, avant même de commencer. »
-                                    </Typography>
-                                    <Typography> - Susan Kare</Typography>
+                                    </p>
+                                    <p> - Susan Kare</p>
                                 </Grid>
                             </div>
                         </Hidden>
-
                         {/*-------------------------------------------------- Design component --------------------------------------------------*/}
                         <DEsignPage/>
                     </Container>
                     <br/>
-
                     <Divider />
-
                     <br/><br/> <br/> <br/> <br/>
-
-                    <Container maxWidth="xl" id="section_3" style={{ color:"white", paddingTop:"5em", }} >
-
-                        <Grid md={12} xs={4} style={{ borderRadius:"5px", marginLeft:"3em",
+                    <Container maxWidth="xl" id="section_3" style={{ color:"white", paddingTop:"7em", paddingLeft:"3em", }} >
+                        <Grid md={12} xs={12} style={{ borderRadius:"5px",
                             backgroundSize:"cover"}}>
                             <Hidden only={['sm', 'lg', 'md','xl']}>
                                 <Grid>
                                     <Typography variant="h2"> DEV.</Typography>
                                 </Grid>
                             </Hidden>
-                            <Hidden only={'xs'}>
-
-                                <Grid md={12} xs={4}>
+                            <Hidden only={['xs']}>
+                                <Grid md={12} xs={12}>
                                     <Typography variant="h2" component="h2" > DEVELOPPEMENT</Typography>
                                 </Grid>
                             </Hidden>
-                            <Hidden only={'xs'}>
-                                <Grid className="mydiv" md={10} xs={12}>
-                                        <Typography variant="h4" gutterBottom style={{fontStyle: "italic", fontWeight:"lighter"}}>
-                                            Mesurer la progression du développement d’un logiciel à l’aune de ses lignes de code revient
-                                            à mesurer la progression de la construction d’un avion à l’aune de son poids
-                                        </Typography>
-                                        <Typography>
-                                            - Bill Gates
-                                        </Typography>
-                                </Grid>
-                            </Hidden>
+                            {/* -------------------------------------------------- Dev component -------------------------------------------------- */}
+                            <ProjectPage/>
                         </Grid>
-
-                            <Grid style={{paddingRight:'4em'}} xl={8}>
-                                <br/>
-                                {/* backgroundImage: `url(${ILLUS2})`*/}
-                            </Grid>
-                        {/* -------------------------------------------------- Design component -------------------------------------------------- */}
-                        <ProjectPage/>
                     </Container>
-
+                    <Hidden only={'xs'}>
+                         <Grid className="mydiv" md={10} xs={12} sm={12}>
+                            <p style={{fontStyle: "italic", fontWeight:"lighter", fontSize:"2em"}}>
+                                Mesurer la progression du développement d’un logiciel à l’aune de ses lignes de code revient
+                                à mesurer la progression de la construction d’un avion à l’aune de son poids
+                            </p>
+                            <Typography>
+                                - Bill Gates
+                            </Typography>
+                        </Grid>
+                    </Hidden>
                     <br/><br/> <br/> <br/> <br/>
-
                     <Divider />
-
                     {/* -------------------------------------------------- Footer component -------------------------------------------------- */}
-                        <BottomToolBarApp/>
+                    <BottomToolBarApp/>
                 </div>
-
             </div>
         );
     }

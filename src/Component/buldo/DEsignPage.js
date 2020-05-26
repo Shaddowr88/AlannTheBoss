@@ -8,9 +8,9 @@ class DesignPage extends React.Component {
         return <Grid container
                      direction="row-reverse"
                      spacing={4} item xs={12} sm={12} >
-            <Grid container sm={6} md={8} justify="flex-start" alignItems="center"
-                  style={{paddingLeft: "1em", color: "white", marginLeft:"3em"}}>
-                <Grid item xs={12} sm={9} >
+            <Grid container sm={12}  md={8} justify="flex-start" alignItems="center"
+                  style={{paddingLeft: "1em", color: "white", marginLeft:"3em", marginTop:"3em"}}>
+                <Grid item xs={12} sm={12} md={9} >
                     <h1 style={{fontSize:"4em"}}> Graphiste freelance </h1>
                     <h3> depuis trois ans, je collabore à la création de votre identité de marque
                         et conçois les outils print et digitaux (logo, papeterie, packaging, siteWeb) nécessaires
@@ -25,7 +25,7 @@ class DesignPage extends React.Component {
                 </Grid>
             </Grid>
 
-            <Grid item xs={12} sm={3} md={3} spacing={3} container zIndex="modal"
+            <Grid item xs={12} sm={6} md={3} spacing={3} container zIndex="modal"
                   direction="row"
                   justify="center"
                   alignItems="center"

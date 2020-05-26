@@ -26,10 +26,7 @@ function ModalSwitch() {
         </div>
     );
 }
-
-
-{/*
-const IMAGES = [
+{/* const IMAGES = [
     { id: 0, title: "Dark Orchid", color: "DarkOrchid" },
     { id: 1, title: "Lime Green", color: "LimeGreen" },
     { id: 2, title: "Tomato", color: "Tomato" },
