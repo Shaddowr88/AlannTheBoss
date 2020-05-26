@@ -11,16 +11,16 @@ class DesignPage extends React.Component {
             <Grid container sm={6} md={8} justify="flex-start" alignItems="center"
                   style={{paddingLeft: "1em", color: "white", marginLeft:"3em"}}>
                 <Grid item xs={12} sm={9} style={{borderBottom: "solid",}}>
-                    <h1 style={{fontSize:"4em"}}> Design </h1>
-                    <h3> Quam ob rem id primum videamus, si placet, quatenus amor in amicitia progredi deNumne,</h3>
+                    <h1 style={{fontSize:"4em"}}> Graphiste freelance </h1>
+                    <h3> depuis trois ans, je collabore à la création de votre identité de marque
+                        et conçois les outils print et digitaux (logo, papeterie, packaging, siteWeb) nécessaires
+                        à la communication de vos projets.</h3>
                 </Grid>
                 <Grid item xs={12} sm={9} md={10} bgcolor="background.paper"
                       color="text.primary"
                       textAlign="left" style={{marginRight: "4em", marginBottom: "1em", }}>
                     <Typography textAlign="left">
-                        Graphiste freelance depuis trois ans, je collabore à la création de votre identité de marque
-                        et conçois les outils print et digitaux (logo, papeterie, packaging, siteWeb) nécessaires
-                        à la communication de vos projets.
+
                     </Typography>
                 </Grid>
             </Grid>
@@ -29,7 +29,7 @@ class DesignPage extends React.Component {
                   direction="row"
                   justify="center"
                   alignItems="center"
-                  style={{ backgroundColor: "#888888", color: "#f5f5f5", padding: "1em",
+                  style={{ backgroundColor: "#F27127", color: "#f5f5f5", padding: "1em",
                       borderRadius: "8px", margingTop: "1em"
                   }}>
                 <h1 >Projets récent</h1 ><br/> <br/>

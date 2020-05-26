@@ -39,31 +39,31 @@ export default function CardDev() {
         <div className={classes.root} >
             {IMAGES.map(i => (
             <Grid container spacing={2}  >
-                    <Grid item xs={3}>
-                        <div className={classes.image} >
+                <Grid item xs={3}>
+                    <div className={classes.image} >
+                        <Link
+                            style={{textDecoration: "none", color:"white"}}
+                            key={i.id} to={{ pathname:`/ProjetMsw/${i.id}`,}}>
+                            <img color={i.color} src={i.src} className={classes.img} alt="complex"  />
+                        </Link>
+                    </div>
+                </Grid>
+                <Grid item xs={9} sm container>
+                    <Grid item xs container direction="column" spacing={2}>
+                        <Grid item xs>
                             <Link
                                 style={{textDecoration: "none", color:"white"}}
-                                key={i.id} to={{ pathname:`/ProjetMsw/${i.id}`,}}>
-                                <img color={i.color} src={i.src} className={classes.img} alt="complex"  />
-                            </Link>
-                        </div>
-                    </Grid>
-                    <Grid item xs={9} sm container>
-                        <Grid item xs container direction="column" spacing={2}>
-                            <Grid item xs>
-                                <Link
-                                    style={{textDecoration: "none", color:"white"}}
-                                    key={i.id}
-                                    to={{ pathname:`/ProjetMsw/${i.id}`,}}>
-                                <Typography gutterBottom variant="subtitle1" style={{borderBottom:"solid",}}>
+                                key={i.id}
+                                to={{ pathname:`/ProjetMsw/${i.id}`,}}>
+                                <Typography gutterBottom variant="subtitle1" style={{borderRight:"solid",}}>
                                     {i.title}
                                 </Typography> </Link>
-                                <Typography variant="body2" gutterBottom style={{marginBottom:"2em"}} >
-                                    {i.textes}
-                                </Typography>
-                            </Grid>
+                            <Typography variant="body2" gutterBottom style={{marginBottom:"2em"}} >
+                                {i.textes}
+                            </Typography>
                         </Grid>
                     </Grid>
+                </Grid>
              </Grid>
            ))}
         </div>

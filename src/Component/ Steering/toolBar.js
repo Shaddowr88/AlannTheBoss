@@ -4,6 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import ScrollspyNav from "react-scrollspy-nav";
 import Button from "@material-ui/core/Button";
 import SvgIcon from '@material-ui/core/SvgIcon';
+import Hidden from "@material-ui/core/Hidden";
 
 
 
@@ -14,15 +15,12 @@ class ToolBarApp extends React.Component {
             scrollTargetIds={["section_1", "section_2", "section_3"]}
             activeNavClass="is-active" >
             <div style={{position: "fixed", width: "100%"}}>
-                <div className="Welcome" style={{position: "absolute", width: "100%", height: "4em",color: "white",}}></div>
+                <div className="Welcome" style={{position: "fixed", width: "100%", height: "4em",color: "white",}}></div>
                 <Toolbar zIndex="tooltip">
                     <Typography className={ScrollspyNav.root}>
                         <Button href="/" variant="h6" color="inherit">
                             <HomeIcon style={{color: "white",}} />
-
-                            {/*<div className="NavName" style={{color: "white",}}> HOME</div>*/}
                         </Button>
-
                         <Button style={{color: "white",}} href="#section_1" color="inherit" variant="h6" className="NavName">
                             SKILLS
                         </Button>
@@ -30,11 +28,9 @@ class ToolBarApp extends React.Component {
                         <Button style={{color: "white",}} href="#section_2" color="inherit" variant="h6" className="NavName">
                             DESIGN
                         </Button>
-
                         <Button style={{color: "white",}} href="#section_3" color="inherit" variant="h6" className="NavName">
-                            DEV
+                            <Hidden only={['sm', 'lg', 'md','xl']}>  DEV</Hidden> <Hidden only={'xs'}>  DEVELOPPEMENT</Hidden>
                         </Button>
-
                     </Typography>
                 </Toolbar>
 
