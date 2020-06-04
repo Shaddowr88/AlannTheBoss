@@ -14,7 +14,7 @@ class IntroPage extends React.Component {
                     </h2>
                 </Grid>
 
-                <Grid item xs={12} sm={7} >
+                {/*  <Grid item xs={12} sm={7} >
                     <p>
                         Quam ob rem id primum videamus, si placet, quatenus amor in amicitia
                         progredi debeat. Numne, si Coriolanus habuit amicos, ferre contra patriam
@@ -27,7 +27,7 @@ class IntroPage extends React.Component {
                         coniunxit.
 
                     </p>
-                </Grid>
+                </Grid> */}
             </Grid>
 
             <Grid item xs={12} sm={12} container direction="row">
