@@ -30,7 +30,7 @@ export default function MswwPage() {
     const handleChangeIndex = (index) => { setValue(index)};
 
     const IMAGES = [
-        { id: 0, title: "MS WOODWORK",textes: "presentation de MS WOODWORK",texte01: "presentation de projet 01", label01:" label01",label02:" label02",label03:"label03",
+        { id: 8, title: "MS WOODWORK",textes: "presentation de MS WOODWORK",texte01: "presentation de projet 01", label01:" label01",label02:" label02",label03:"label03",
             title02: "MS WOODWORK Menuisier", texte02: "Identité visuelle de pme spécialiser dans l'agencement et la conception de meuble sur mesure\n" +
                 "    de fonctionnalité Gestion des utilisateurs, rôle et autorisation par utilisateur.", tdescribe02: "Espace de gestion des contacts.\n" +
                 "        Un Dashboard pour visualiser rapidement des événements et dépenses.\n" +
@@ -38,7 +38,7 @@ export default function MswwPage() {
                 sample00:"John", sample01:MSWW01 , sample02:MSWW02 , sample03:MSWW03 , sample04:MSWW04, sample05:"Jones"
             },
 
-        { id: 1, title: "BIZON",textes: "Bizon : Un CRM en mode SAAS", label01:" label01",label02:" label02",label03:"label03",
+        { id: 6, title: "BIZON",textes: "Bizon : Un CRM en mode SAAS", label01:" label01",label02:" label02",label03:"label03",
             texte01: "Le CRM Bizon, est un Gestionnaire de biens immobiliers qui permet de bénéficier de fonctionnalité ",
             title02: "Bizon Un CRM en mode SAAS",
             texte02: "Gestion des utilisateurs, rôle et autorisation par utilisateurs. Espace de gestion des contacts.\n" +
@@ -53,7 +53,7 @@ export default function MswwPage() {
             sample00:"John", sample01:Bison01 , sample02:Bison02 , sample03:Bison03 , sample05:"Jones"},
 
 
-        { id: 2, title: "B4S",textes: "B4Star est une application mobile permettant une gestion de la réputation numérique",  label01:" label01",label02:" label02",label03:"label03",
+        { id: 9, title: "B4S",textes: "B4Star est une application mobile permettant une gestion de la réputation numérique",  label01:" label01",label02:" label02",label03:"label03",
             texte01: "Connexion et interactions aux différents réseaux sociaux . Espace de gestion des contenus . Dashboard pour visualiser les KPI",
 
             title02: " ……B4S" ,
