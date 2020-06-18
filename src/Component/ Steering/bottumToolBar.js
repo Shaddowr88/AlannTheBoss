@@ -19,15 +19,6 @@ class BottomToolBarApp extends React.Component {
                             </Grid>
 
                             <Divider orientation="vertical" flexItem />
-                            {/* <Grid xs={12} sm={3} style={{padding:"1em", margin:"1em", borderRadius:"8px"}}>
-                                <h3> Dev</h3>
-                                <ol style={{listStyleType: "circle"}}>
-                                    <li>Site vitrine, e-commerce, intranet</li><br/>
-                                    <li>Concept et prototype</li><br/>
-                                    <li>Language, HTML, CSS, JavaScript,</li><br/>
-                                    <li>Mise en place et  gestion de CMS Wordpress, wooCommerce</li><br/>
-                                </ol>
-                            </Grid>*/}
                             <Grid xs={12} sm={3} style={{padding:"1em", margin:"1em", borderRadius:"8px"}}>
                                 <h3> Contact</h3>
                                 <ol style={{listStyleType: "circle"}}>
