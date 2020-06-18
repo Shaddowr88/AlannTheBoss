@@ -8,16 +8,17 @@ import BannerIll from "../../bannerIllus";
         render() {
             return <div style={{"height": "50em", justifyContent: "center", paddingBottom:"2em"}}>
 
+
+
                 <Grid>
                     <Grid md={4} xs={2} style={{}}>
                         <Hidden only={['xs','sm']}>
                             <div style={{position:"relative"}}>
-                                <img className="img" src={INTRO} alt="" style={{position:"absolute", filter: "blur(6px)",
-                                    height: "40em",left: "29em", marginTop:"6em",}}/>
-                                    <img className="img" src={INTRO} alt="" style={{position:"absolute",
-                                    height: "40em",left: "30em", marginTop:"6em",}}/>
-                            </div>
+
+                            </div><BannerIll/>
                         </Hidden>
+
+
                         <Hidden only={['xl','md','lg']}>
                             <div style={{position:"relative", width:"4em", border:"black",}}>
                                 <img className="img" src={INTRO} alt="" style={{position:"absolute",
@@ -26,14 +27,16 @@ import BannerIll from "../../bannerIllus";
                                     height:"15em", marginTop:"3em",top: "30em", left:"3em" }} />
                             </div>
                         </Hidden>
+
+
+
                     </Grid>
                     <Grid md={8} xs={4}>
                         <div style={{paddingLeft: "5em"}}>
                             <Grid container spacing={1} xs={12} lg={12}
                                   >
                                 <Hidden only={['xs','sm']}>
-                                    <Grid container lg={5} xs={2}
-                                      style={{fontSize: "9em", paddinTop: "1em", marginTop: "1em", color: "white"}}>
+                                    <Grid container lg={5} xs={2} style={{fontSize: "9em", paddinTop: "1em", marginTop: "1em", color: "white"}}>
                                         Loic <span >SUNVÉ</span> <br/>
                                     </Grid>
                                     <Grid  lg={10} xs={14} style={{fontSize: "4em", color: "white"}}>

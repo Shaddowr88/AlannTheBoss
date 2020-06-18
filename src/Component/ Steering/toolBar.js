@@ -5,6 +5,7 @@ import ScrollspyNav from "react-scrollspy-nav";
 import Button from "@material-ui/core/Button";
 import SvgIcon from '@material-ui/core/SvgIcon';
 import Hidden from "@material-ui/core/Hidden";
+import '../../App.css'
 
 
 
@@ -14,14 +15,15 @@ class ToolBarApp extends React.Component {
         return <ScrollspyNav zIndex="tooltip"
             scrollTargetIds={["section_1", "section_2", "section_3"]}
             activeNavClass="is-active" >
-            <div style={{position: "fixed", width: "100%", zIndex: 10000}}>
-                <div className="Welcome" style={{position: "fixed", width: "100%", height: "4em",color: "white",}}></div>
+            <div className="navBar">
+                <div className="Welcome"></div>
                 <Toolbar zIndex="tooltip">
                     <Typography className={ScrollspyNav.root}>
                         <Button href="/" variant="h6" color="inherit">
                             <HomeIcon style={{color: "white",}} />
                         </Button>
-                        <Button style={{color: "white",}} href="#section_1" color="inherit" variant="h6" className="NavName">
+                        <Button style={{color: "white",}}
+                                href="#section_1" color="inherit" variant="h6" className="NavName">
                             SKILLS
                         </Button>
 

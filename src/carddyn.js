@@ -1,11 +1,7 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { useSpring, animated } from 'react-spring'
-import '../src/stylecard.css'
-import range from 'lodash-es/range'
-import Grid from "@material-ui/core/Grid";
+import '../src/App.css'
 
-const items = range(3);
 const interp = i => r => `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`;
 const LISTE =  [
     { id: 1,titre: "DESIGN",background:"#F27127",
