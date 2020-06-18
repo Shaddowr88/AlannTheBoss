@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import Carddyn from '../../carddyn'
 
 
 class IntroPage extends React.Component {
@@ -13,7 +14,6 @@ class IntroPage extends React.Component {
                         Des compétences à votre service
                     </h2>
                 </Grid>
-
                 {/*  <Grid item xs={12} sm={7} >
                     <p>
                         Quam ob rem id primum videamus, si placet, quatenus amor in amicitia
@@ -29,39 +29,9 @@ class IntroPage extends React.Component {
                     </p>
                 </Grid> */}
             </Grid>
-
             <Grid item xs={12} sm={12} container direction="row">
-                <Grid  xs={12} sm={12} md={3} style={{padding:"1em",backgroundColor:"#F2A922", margin:"1em",
-                    listStyleType: "disc", borderRadius:"8px", boxShadow: "10px 11px 8px -5px rgba(0,0,0,0.27)"}}>
-                    <h3>DESIGN</h3>
-
-                    <ol style={{listStyleType:"circle"}}>
-                        <li>Création  logo, cartes de visite</li> <br/>
-                        <li>Concept graphique et web design</li><br/>
-                        <li>Packaging</li><br/>
-                        <li>Templates Web</li><br/>
-                        <li>Plaquettes publicitaires</li><br/>
-                        <li>Newsletters</li><br/>
-                    </ol>
-
-                </Grid>
-                <Grid xs={12} sm={12} md={3} style={{padding:"1em", backgroundColor:"#F27127", margin:"1em", borderRadius:"8px",
-                    boxShadow: "10px 11px 8px -5px rgba(0,0,0,0.27)"}}>
-                    <h3>DEV</h3>
-
-                    <ol style={{listStyleType: "circle"}}>
-                        <li>Site vitrine, e-commerce, intranet</li><br/>
-                        <li>Concept et prototype</li><br/>
-                        <li>Language, HTML, CSS, JavaScript,</li><br/>
-                        <li>Mise en place et  gestion de CMS Wordpress, wooCommerce</li><br/>
-                        <li>RÉFÉRENCEMENT NATUREL SEO</li><br/>
-                        <li>React, ReactNative, AngularJS, Ionic, Laravel, Symphony</li><br/>
-                        <li>Applications  cross-plateforme iOs et Android</li><br/>
-                        <li>SQL, PHP, NodeJS, Ajax</li><br/>
-                        <li>Application des bonne pratique du web</li><br/>
-                    </ol>
-                </Grid>
-                <Grid xs={12} sm={12} md={3} style={{padding:"1em",backgroundColor:"#F2A922", margin:"1em", borderRadius:"8px",
+                    <Carddyn/>
+                {/*  <Grid xs={12} sm={12} md={3} style={{padding:"1em",backgroundColor:"#F2A922", margin:"1em", borderRadius:"8px",
                     boxShadow: "10px 11px 8px -5px rgba(0,0,0,0.27)"}}>
                     <h3>SOFT SKILL'S</h3>
 
@@ -74,9 +44,8 @@ class IntroPage extends React.Component {
                         <li>Bon communicant</li><br/>
                     </ol>
 
-                </Grid>
+                </Grid>*/}
             </Grid>
-
         </Grid>
     }
 }

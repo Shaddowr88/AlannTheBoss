@@ -17,7 +17,7 @@ class App extends Component {
     componentDidMount() {
         $(document).ready(function() {
             $(window).scroll(function() {
-                if ($(document).scrollTop() < 100) {
+                if ($(document).scrollTop() < 40) {
                     console.log ("scrollTop");
                     $(".Welcome").hide();
                     $(".NavName").css("color", "white");

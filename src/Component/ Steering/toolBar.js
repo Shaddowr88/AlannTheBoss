@@ -14,7 +14,7 @@ class ToolBarApp extends React.Component {
         return <ScrollspyNav zIndex="tooltip"
             scrollTargetIds={["section_1", "section_2", "section_3"]}
             activeNavClass="is-active" >
-            <div style={{position: "fixed", width: "100%"}}>
+            <div style={{position: "fixed", width: "100%", zIndex: 10000}}>
                 <div className="Welcome" style={{position: "fixed", width: "100%", height: "4em",color: "white",}}></div>
                 <Toolbar zIndex="tooltip">
                     <Typography className={ScrollspyNav.root}>

@@ -1,72 +1,42 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import {Link} from "react-router-dom";
-import B4S from "./static/images/B4S/B4S copie.png";
-import MSWW from "./static/images/msww/msww.png";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { useSpring, animated } from 'react-spring'
+import '../src/stylecard.css'
+import range from 'lodash-es/range'
+import Grid from "@material-ui/core/Grid";
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-        padding: theme.spacing(2),
-        margin: 'auto',
-        maxWidth: 500,
-    },
-
-    image: {
-        width: 50,
-        height: 50,
-    },
-
-    img: {
-        margin: 'auto',
-        display: 'block',
-        maxWidth: '100%',
-        maxHeight: '100%',
-    },
-}));
-
-const IMAGES = [
-    { id: 0, title: "MS WOODWORK",textes: "Artisan Menuisier", color: "DarkOrchid", src:MSWW },
-    { id: 3, title: "delilce", textes: "presentation de delilce", color: "Tomato", src:B4S },
-  //  { id: 4, title: "SAMOVAR", textes: "presentation de SAMOVAR", color: "Tomato", src:B4S },
+const items = range(3);
+const interp = i => r => `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`;
+const LISTE =  [
+    { id: 1,titre: "DESIGN",background:"#F27127",
+        content: [" Création  logo •", " cartes de visite •", " Concept graphique et web design •" ," Packaging •", " Templates Web •", " Plaquettes publicitaires, Newsletters " ] },
+    { id: 2,titre: "DEV",background:"#F2A922",
+        content: ["Site vitrine •", " e-commerce •", " HTML, CSS, JavaScript •", " Mise en place de CMS Wordpress, wooCommerce •", " React, ReactNative, AngularJS, Laravel, Symphony •", " SQL, PHP, NodeJS, Ajax " ] },
+    { id: 3,titre: "SOFT SKILL'S",background:"#F27127",
+        content: [ " Créatif •", " Curiosité intellectuelle •", " Capacité à résoudre les problèmes •", " Sens du travail en équipe •", " Esprit critique •", " Bon communicant " ] },
 ];
 
 
-export default function CardGrid() {
-    const classes = useStyles();
-    return (
-        <div   className={classes.root} style={{paddinTop:"6em",}} >
-            {IMAGES.map(i => (
-            <Grid container spacing={2}   >
-                    <Grid item xs={3}>
-                        <div className={classes.image} >
-                            <Link
-                                style={{textDecoration: "none", color:"white"}}
-                                key={i.id} to={{ pathname:`/ProjetMsw/${i.id}`,}}>
-                                <img color={i.color} src={i.src} className={classes.img} alt="complex"  />
-                            </Link>
-                        </div>
-                    </Grid>
-                    <Grid item xs={9} sm container>
-                        <Grid item xs container direction="column" spacing={2}>
-                            <Grid item xs>
-                                <Link
-                                    style={{textDecoration: "none", color:"white"}}
-                                    key={i.id}
-                                    to={{ pathname:`/ProjetMsw/${i.id}`,}}>
-                                <Typography gutterBottom variant="subtitle1" style={{borderRight:"solid",}}>
-                                    {i.title}
-                                </Typography> </Link>
-                                <Typography variant="body2" gutterBottom style={{marginBottom:"2em"}} >
-                                    {i.textes}
-                                </Typography>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-             </Grid>
-           ))}
-        </div>
-    );
+
+function Carddyn() {
+    const { radians } = useSpring({
+        to: async next => {
+            while (1) await next({ radians: 2 * Math.PI })
+        },
+        from: { radians: 0 },
+        config: { duration: 3500 },
+        reset: true,
+    });
+
+    return LISTE.map(i => <animated.div key={i.id} className="script-bf-box col-3" style={{ transform: radians.interpolate(interp(i.id)) }}>
+
+
+            <div key={i.id}  style={{margin:"1em", justifyContent: "center"}} >
+                <h1>{i.titre}</h1>
+                <p>{i.content}</p>
+            </div>
+
+    </animated.div>)
 }
+
+export default Carddyn

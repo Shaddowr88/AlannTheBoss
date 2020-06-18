@@ -2,10 +2,12 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import INTRO from "../../static/images/Banner.png";
 import Hidden from "@material-ui/core/Hidden";
+import BannerIll from "../../bannerIllus";
 
     class   BannerIndex extends React.Component {
         render() {
             return <div style={{"height": "50em", justifyContent: "center", paddingBottom:"2em"}}>
+
                 <Grid>
                     <Grid md={4} xs={2} style={{}}>
                         <Hidden only={['xs','sm']}>
@@ -39,7 +41,7 @@ import Hidden from "@material-ui/core/Hidden";
                                     </Grid>
                                 </Hidden>
                                 <Hidden only={['xl','md','lg']}>
-                                    <Grid container lg={5} xs={2} 
+                                    <Grid container lg={5} xs={2}
                                           style={{fontSize: "6em", paddinTop: "2em", marginTop: "1em", color: "white"}}>
                                         Loic <span >SUNVÉ</span> <br/>
                                     </Grid>
