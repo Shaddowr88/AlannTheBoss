@@ -26,21 +26,21 @@ class ToolBarApp extends React.Component {
                             <ArrowUpwardOutlinedIcon style={{color: "white", display: "none"}} className="homeB" />
                         </Button>
                         <Button style={{color: "white",}}
-                                href="#section_1" color="inherit" variant="h6" className="NavName">
+                                href="#SKILLS" color="inherit" variant="h6" className="NavName">
                             SKILLS
                         </Button>
-                        <Button style={{color: "white",}} href="#section_2" color="inherit" variant="h6" className="NavName">
+                        <Button style={{color: "white",}} href="#DESIGN" color="inherit" variant="h6" className="NavName">
                             DESIGN
                         </Button>
-                        <Button style={{color: "white",}} href="#section_3" color="inherit" variant="h6" className="NavName">
+                        <Button style={{color: "white",}} href="#DEV" color="inherit" variant="h6" className="NavName">
                             <Hidden only={['sm', 'lg', 'md','xl']}>  DEV</Hidden> <Hidden only={'xs'}>  DEVELOPPEMENT</Hidden>
                         </Button>
                         <Hidden only={['lg', 'md','xl']}>
-                            <Button  style={{color: "white", marginLeft:"7em"}} href="#section_4" color="inherit" variant="h6" className="NavName">
+                            <Button  style={{color: "white", marginLeft:"7em"}} href="#CONTACT" color="inherit" variant="h6" className="NavName">
                         <InfoOutlinedIcon style={{color: "white",}} />
                         </Button>
                         </Hidden>
-                        <Button  style={{color: "white",marginLeft:"14rem", }} href="#section_4" color="inherit" variant="h6" className="navright">
+                        <Button  style={{color: "white",marginLeft:"14rem", }} href="#CONTACT" color="inherit" variant="h6" className="navright">
                              <Hidden only={['sm','xs']}> <InfoOutlinedIcon style={{color: "white",}} /> </Hidden>
                         </Button>
                     </Typography>

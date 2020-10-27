@@ -5,8 +5,6 @@ import CardDev from "../ Steering/cardDev";
 import ILLUS2 from "../../static/images/illustration02.png";
 import Hidden from "@material-ui/core/Hidden";
 import BannerIll02 from "../Banners/bannerIllus02";
-import arrayEachRight from "lodash-es/_arrayEachRight";
-
 
 class ProjectPage extends React.Component {
     render() {

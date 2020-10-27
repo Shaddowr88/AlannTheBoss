@@ -7,7 +7,6 @@ import $ from "jquery";
 import BannerIndex from "./Component/buldo/IndexBanner";
 import Hidden from "@material-ui/core/Hidden";
 import BottomToolBarApp from "./Component/ Steering/bottumToolBar";
-import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import DEsignPage from "./Component/buldo/DEsignPage";
@@ -56,12 +55,12 @@ class App extends Component {
                     {/* -------------------------------------------------- introduction Component -------------------------------------------------- */}
                     <BannerIndex/>
                     {/* -------------------------------------------------- Skill component -------------------------------------------------- */}
-                    <Container  id="section_1" style={{ color:"white", paddingTop:"7em", paddingLeft:"3em", }}>
+                    <Container  id="SKILLS" style={{ color:"white", paddingTop:"7em", paddingLeft:"3em", }}>
                         <IntroPage/>
                     </Container>
 
                     {/* -------------------------------------------------- animate div 01 -------------------------------------------------- */}
-                    <Container id="section_2">
+                    <Container id="DESIGN">
                         <Hidden only={'xs'}>
                             <div  md={12} xs={4}  style={{height: "20em",color:"white",
                             marginLeft:"1em", marginTop:"5em", paddingTop:"2em", marginBottom:"5em"}}>
@@ -86,7 +85,7 @@ class App extends Component {
 
                     <br/> <br/><br/> <br/> <br/> <br/>
 
-                    <Container maxWidth="xl" id="section_3" style={{ color:"white", paddingTop:"3em",paddingBottom:"3em" }} >
+                    <Container maxWidth="xl" id="DEV" style={{ color:"white", paddingTop:"3em",paddingBottom:"3em" }} >
                         <Grid md={12} xs={12} style={{ borderRadius:"5px",backgroundSize:"cover"}}>
                             <Hidden only={['sm', 'lg', 'md','xl']}>
                             <Grid>
@@ -118,7 +117,7 @@ class App extends Component {
                     backgroundImage: `url(${INTRO})`,
                     backgroundRepeat: 'round',width:'100%', color:'white',}}>
                     </div>
-                    <Container maxWidth="xl" id="section_4" style={{ color:"white", paddingLeft:"3em", marginTop:"30em" }} >
+                    <Container maxWidth="xl" id="CONTACT" style={{ color:"white", paddingLeft:"3em", marginTop:"30em" }} >
 
                         {/* -------------------------------------------------- Footer component -------------------------------------------------- */}
                             <BottomToolBarApp/>
