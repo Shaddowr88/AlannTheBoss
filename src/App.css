@@ -140,7 +140,7 @@ position: fixed;
   /*
  Ensure background is added first
  */
-  background: linear-gradient(36deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 29%, rgba(255,254,8,1) 100%);
+  background: linear-gradient(36deg, rgba(131,58,180,1) 16%, rgba(253,29,29,1) 49%, rgba(255,254,8,1) 100%);
   background-attachment: fixed;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -149,3 +149,5 @@ position: fixed;
   font-weight: bold;
   text-align: center;
 }
+
+

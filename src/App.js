@@ -35,9 +35,9 @@ class App extends Component {
                 if ($(document).scrollTop() > 1890) {
                     $(".mydiv").show( 500 );
                     $(".mydiv").fadeIn( 1000 );
-                } else {
+                } {/*else {
                     $(".mydiv").fadeOut( "slow" );
-                }
+                */}
                 if ($(document).scrollTop() < 450) {
                     $(".img").fadeIn( 1500 );
                 }else{
@@ -55,7 +55,7 @@ class App extends Component {
                     {/* -------------------------------------------------- introduction Component -------------------------------------------------- */}
                     <BannerIndex/>
                     {/* -------------------------------------------------- Skill component -------------------------------------------------- */}
-                    <Container  id="SKILLS" style={{ color:"white", paddingTop:"7em", paddingLeft:"3em", }}>
+                    <Container  id="SKILLS" style={{ color:"white", paddingTop:"7em", paddingLeft:"3em" }}>
                         <IntroPage/>
                     </Container>
 
@@ -63,16 +63,15 @@ class App extends Component {
                     <Container id="DESIGN">
                         <Hidden only={'xs'}>
                             <div  md={12} xs={4}  style={{height: "20em",color:"white",
-                            marginLeft:"1em", marginTop:"5em", paddingTop:"2em", marginBottom:"5em"}}>
+                            marginLeft:"1em", marginTop:"5em", paddingTop:"2em", marginBottom:"2em"}}>
                                 <Grid md={12} xs={4}></Grid>
                                     <Grid md={12} xs={1}>
-                                    <p style={{fontStyle: "italic", fontWeight:"lighter", fontSize:"2em"}} className="cuttinText"> Les bons </p>
-                                    <Typography className="cuttinText" style={{ fontStyle: "bold", fontSize:"6em"}} > DESIGNs </Typography>
+                                    <Typography  style={{ fontStyle: "bold", fontSize:"6em"}} > DESIGN </Typography>
                                 </Grid>
                                 <Grid md={12} xs={12} >
-                                    <p style={{fontStyle: "italic", fontWeight:"lighter", fontSize:"2em"}} className="cuttinText">
-                                    ne dépendent pas du support que l’on utilise. Pour créer un design de qualité,
-                                    il faut bien réfléchir à ce que l’on veut faire et au cadre dans lequel cela s’inscrit, avant même de commencer.
+                                    <p style={{fontStyle: "bold", fontWeight:"lighter", fontSize:"2em"}} className="cuttinText">
+
+            Pour créer un design de qualité,il faut bien réfléchir à ce que l’on veut faire et au cadre dans lequel cela s’inscrit, avant même de commencer.
                                     </p>
                                     <p style={{fontStyle: "italic", fontWeight:"lighter", fontSize:"2em"}} className="cuttinText"> - S.K  </p>
                                 </Grid>
@@ -94,7 +93,7 @@ class App extends Component {
                             </Hidden>
 
                             <Hidden only={'xs'}>
-                                <Grid className="mydiv" md={10} xs={12} sm={12}>
+            {/*  <Grid className="mydiv" style={{display:"none"}} md={10} xs={12} sm={12}>
                                     <p className="cuttinText" style={{color:"white", fontStyle: "bold", fontWeight:"lighter", fontSize:"2em"}}>
                                         Mesurer la progression du </p>
                                         <Typography className="cuttinText" style={{ fontStyle: "bold", fontSize:"6em", top:"30em"}} > DEVELOPPEMENT </Typography>
@@ -104,7 +103,11 @@ class App extends Component {
                                     <p style={{fontStyle: "italic", fontWeight:"lighter", fontSize:"2em"}} className="cuttinText">
                                         - Bill Gates
                                     </p>
-                                </Grid>
+                                </Grid>*/}
+
+            <Grid className="mydiv" style={{display:"none", paddingLeft:"6em"}} md={10} xs={12} sm={12}>
+        <Typography  style={{ fontStyle: "bold", fontSize:"6em", top:"30em"}} > DEVELOPPEMENT </Typography>
+        </Grid>
                             </Hidden>
                         </Grid>
                     </Container>
