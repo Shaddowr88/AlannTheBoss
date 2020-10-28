@@ -9,7 +9,7 @@ class IntroPage extends React.Component {
             <Grid item xs={12} sm={12} container
                   direction="row" >
                 <Grid item xs={12} sm={7} style={{borderBottom:"solid"}}>
-                    <h1 style={{fontSize:"4em"}}> SKILL's </h1>
+                
                     <h2>
                         À votre service
                     </h2>

@@ -27,7 +27,7 @@ import BannerIll from "../Banners/bannerIllus";
                             <Grid container spacing={1} xs={12} lg={12}
                                   >
                                 <Hidden only={['xs','sm']}>
-                                    <Grid container lg={5} xs={2} style={{fontSize: "9em", paddinTop: "1em", marginTop: "1em", color: "white"}}>
+                                    <Grid container lg={5} xs={2} style={{fontSize: "9em", paddinTop: "1em", marginTop: "50px", color: "white"}}>
                                         Loic <span >SUNVÉ</span> <br/>
                                     </Grid>
                                     <Grid  lg={10} xs={14} style={{fontSize: "4em", color: "white"}}>

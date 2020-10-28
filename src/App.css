@@ -150,4 +150,13 @@ position: fixed;
   text-align: center;
 }
 
+.cuttinText2 {
+  background: linear-gradient(36deg, rgba(15,181,247,1) 0%, rgba(12,245,107,1) 21%, rgba(76,191,241,1) 44%, rgba(255,255,255,1) 69%, rgba(0,212,255,1) 100%);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 
+
+  font-weight: bold;
+  text-align: center;
+}

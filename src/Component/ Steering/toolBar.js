@@ -27,7 +27,7 @@ class ToolBarApp extends React.Component {
                         </Button>
                         <Button style={{color: "white",}}
                                 href="#SKILLS" color="inherit" variant="h6" className="NavName">
-                            SKILLS
+                            SKILL
                         </Button>
                         <Button style={{color: "white",}} href="#DESIGN" color="inherit" variant="h6" className="NavName">
                             DESIGN

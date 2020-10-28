@@ -168,10 +168,16 @@ export default function MswwPage() {
     }
     let { id } = useParams();
     let image = IMAGES[parseInt(id, 10)];
-    if (!image) return <div style={{backgroundColor:"white", height:"15em", padding:"20em"}}>
-      <Typography style={{  color: "rgba(12,6,6,0.62)", letterSpacing: ".15em",fontSize:"4em",height:"5em",}}> Oups!!! cette page est en cours de construction </Typography>
-
-        <WaitIll/>
+    if (!image) return <div style={{ height:"80rem", padding:"2em", paddinTop:"50em"}}>
+      <Typography className="cuttinText2" 
+      style={{  color: "rgba(12,6,6,0.62)",fontSize:"10em",}}> 
+      Oups!!! 
+      </Typography>
+      <p className="cuttinText2" 
+      style={{  color: "rgba(12,6,6,0.62)", letterSpacing: ".15em",fontSize:"2em",}}> 
+      cette page est en cours de construction 
+      </p>
+      <WaitIll/>
         </div>;
 
 
