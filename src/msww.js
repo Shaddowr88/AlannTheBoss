@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from "@material-ui/core/Typography";
-import {useParams} from "react-router-dom";
+import {useParams, useLocation, BrowserRouter } from "react-router-dom";
 import FLORAL from "./static/images/Flora.jpg";
 import MSWW01 from "./static/images/msww/Flora.jpg";
 import MSWW02 from "./static/images/msww/Captu01.jpg";
@@ -22,6 +22,8 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import WaitIll from "./Component/buldo/waittingComp";
+import { useEffect } from 'react';
+
 
 
 
@@ -33,6 +35,16 @@ export default function MswwPage() {
     const [value, setValue] = React.useState(0);
     const handleChange = (event,newValue) => { setValue(newValue)};
     const handleChangeIndex = (index) => { setValue(index)};
+    
+    const ScrollToTop = ({ children }) => {
+        const { pathname } = useLocation();
+      
+        useEffect(() => {
+          window.scrollTo(0, 0);
+        }, [pathname]);
+      
+        return children || null;
+      };
 
 
     const IMAGES = [
@@ -182,6 +194,8 @@ export default function MswwPage() {
 
 
     return (
+        <BrowserRouter>
+        <ScrollToTop>
         <Grid style={{ paddinTop:"4em",backgroundColor:"#102D40", color:"white"}}>
             <Grid>
                 <div>
@@ -279,4 +293,6 @@ export default function MswwPage() {
                 </div>
             </Grid>
         </Grid>
+        </ScrollToTop>
+        </BrowserRouter>
     );}

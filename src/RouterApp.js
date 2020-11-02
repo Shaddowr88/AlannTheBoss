@@ -1,6 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router, Switch, Route, useLocation,} from "react-router-dom";
 import App from "./App";
+import Cgu from "./Component/buldo/cgu";
 import MswwPage from "./msww";
 
 export default function ModalGalleryExample() {
@@ -21,6 +22,7 @@ function ModalSwitch() {
                 <Route path="/ProjetMsw/:id" children={<MswwPage />} />
                 {/* <Route path="/gallery" children={<Gallery />} />
                 <Route path="/img/:id" children={<ImageView />} />*/}
+                <Route path="/CGU" children={<Cgu/>} />
             </Switch>
             {/*{background && <Route path="/img/:id" children={<Modal />} />}*/}
         </div>

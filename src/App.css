@@ -131,6 +131,8 @@ position: fixed;
   color: white;
 }
 
+
+
 .expo{
   margin-right:2em;
   height:20em;
@@ -159,4 +161,9 @@ position: fixed;
 
   font-weight: bold;
   text-align: center;
+}
+
+.strat{
+margin-top: 2em;
+
 }

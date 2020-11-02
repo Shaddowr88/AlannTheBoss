@@ -11,6 +11,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import DEsignPage from "./Component/buldo/DEsignPage";
 import INTRO from "./static/images/Banner.png";
+import {Link} from "react-router-dom";
 
 
 class App extends Component {
@@ -134,8 +135,9 @@ class App extends Component {
                     </Container>
 
                 </div>
-                <div style={{textAlign:"center", fontWeight:"lighter", color:"white"}} >
-                    <p>Copyright © 2019 - Loic SUNVE</p>
+                <div style={{textAlign:"center"}} >
+                <Link to={{ pathname:`/CGU`,}} style={{textDecoration:"none", fontWeight:"bold", color:"white"}} > <p  >Copyright © 2019 - Loic SUNVE - Tous droits réservés </p>
+                </Link>
                 </div>
             </div>
         );
