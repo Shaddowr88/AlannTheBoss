@@ -8,10 +8,34 @@ import BannerIll from "../Banners/bannerIllus";
         render() {
             return <div style={{"height": "50em", justifyContent: "center", paddingBottom:"2em"}}>
                 <Grid>
+
+                <Grid md={8} xs={4}>
+                    <div style={{paddingLeft: "5em"}}>
+                        <Grid container spacing={1} xs={12} lg={12}>
+                            <Hidden only={['xs','sm']}>
+                                 <Grid container lg={5} xs={2} style={{fontSize: "9em", paddinTop: "1em", marginTop: "50px", color: "white"}}>
+                                      Loic <span >SUNVÉ</span> <br/>
+                                 </Grid>
+                                <Grid  lg={10} xs={14} style={{fontSize: "4em", color: "white"}}>
+                                    <span> DESIGN & DEVELOPPEMENT WEB </span>
+                                 </Grid>
+                             </Hidden>
+                             <Hidden only={['xl','md','lg']}>
+                                 <Grid container lg={5} xs={2}
+                                    style={{fontSize: "6em", paddinTop: "2em", marginTop: "1em", color: "white"}}>
+                                    Loic <span >SUNVÉ</span> <br/>
+                                    </Grid>
+                                    <Grid container lg={5} xs={12} style={{fontSize: "2em", color: "white", zIndex:"7000000000"}}>
+                                        <span style={{color: "white"}}> DESIGN & DEVELOPPEMENT WEB </span>
+                                      </Grid>
+                            </Hidden>
+                         </Grid>
+                    </div>
+                </Grid>
                     <Grid md={4} xs={2} style={{}}>
                         <Hidden only={['xs','sm']}>
                             <div style={{position:"relative"}}> </div>
-            <BannerIll/>
+                            <BannerIll/>
                         </Hidden>
                         <Hidden only={['xl','md','lg']}>
                             <div style={{position:"relative", width:"3em", border:"black",}}>
@@ -22,30 +46,7 @@ import BannerIll from "../Banners/bannerIllus";
                             </div>
                         </Hidden>
                     </Grid>
-                    <Grid md={8} xs={4}>
-                        <div style={{paddingLeft: "5em"}}>
-                            <Grid container spacing={1} xs={12} lg={12}
-                                  >
-                                <Hidden only={['xs','sm']}>
-                                    <Grid container lg={5} xs={2} style={{fontSize: "9em", paddinTop: "1em", marginTop: "50px", color: "white"}}>
-                                        Loic <span >SUNVÉ</span> <br/>
-                                    </Grid>
-                                    <Grid  lg={10} xs={14} style={{fontSize: "4em", color: "white"}}>
-                                        <span> DESIGN & DEVELOPPEMENT WEB </span>
-                                    </Grid>
-                                </Hidden>
-                                <Hidden only={['xl','md','lg']}>
-                                    <Grid container lg={5} xs={2}
-                                          style={{fontSize: "6em", paddinTop: "2em", marginTop: "1em", color: "white"}}>
-                                        Loic <span >SUNVÉ</span> <br/>
-                                    </Grid>
-                                    <Grid container lg={5} xs={12} style={{fontSize: "2em", color: "white"}}>
-                                        <span style={{color: "white"}}> DESIGN & DEVELOPPEMENT WEB </span>
-                                    </Grid>
-                                </Hidden>
-                            </Grid>
-                        </div>
-                    </Grid>
+
                 </Grid>
             </div>
         }
