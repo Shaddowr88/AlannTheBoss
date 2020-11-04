@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import { Typography } from '@material-ui/core';
 
 
 class BottomToolBarApp extends React.Component {
@@ -31,9 +32,9 @@ class BottomToolBarApp extends React.Component {
                 <Grid xs={12} sm={2} style={{padding:"1em", margin:"1em", borderRadius:"8px"}}>
                     <h3 style={{padding:"1em", borderRadius:"8px"}} > Contact</h3>
                     <ol style={{listStyleType: "none"}}>
-                        <li> <AlternateEmailIcon/> <a style={{ marginLeft:"1em" }}>lsunve@me.com</a> </li><br/>
-                        <li><LinkedInIcon/> <a style={{ marginLeft:"1em" }}> in/loicsun</a></li> <br/>
-                        <li><GitHubIcon/> <a style={{ marginLeft:"1em" }}>Shaddowr88</a></li><br/>
+                        <li> <AlternateEmailIcon style={{ marginRight:"1em" }}/>  lsunve@me.com  </li><br/>
+                        <li><LinkedInIcon style={{ marginRight:"1em" }}/> in/loicsun</li> <br/>
+                        <li><GitHubIcon style={{ marginRight:"1em" }}/>Shaddowr88</li><br/>
                     </ol>
                 </Grid>
             </Grid>
