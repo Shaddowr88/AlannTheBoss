@@ -1,7 +1,7 @@
 import React from 'react'
 import ToolBarCgu from '../ Steering/toolBarCgu'
 import { useEffect } from 'react';
-import { useLocation, BrowserRouter } from 'react-router-dom';
+import { useLocation, BrowserRouter} from 'react-router-dom';
 
 const ScrollToTop = ({ children }) => {
   const { pathname } = useLocation();
@@ -12,7 +12,7 @@ const ScrollToTop = ({ children }) => {
 
   return children || null;
 };
-
+ 
 
 function Cgu() {
     return (
@@ -46,7 +46,7 @@ Le site LoicS.com peut contenir des imprécisions techniques ou d'autres défa
 Les présentes Conditions Générales d'Utilisation sont régies et interprétées conformément au droit français.
 En cas de contestation liée à l’utilisation du site LoicS.com, vous avez la possibilité de recourir à une procédure de médiation conventionnelle ou à toute autre procédure de mode alternatif de règlement des différends.
 Loic SUNVÉ se réserve le droit de requérir et d'obtenir des injonctions ou ordonnances pour la défense de ses droits aux termes des présentes.
-            </p>
+            </p> {/*<br/> <Link to="../files/CGU.pdf" target="_blank" download>Download</Link>*/}
             </div>
             </ScrollToTop>
       </BrowserRouter>

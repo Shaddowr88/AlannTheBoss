@@ -21,6 +21,7 @@ function ModalSwitch() {
                 <Route exact path="/" children={<App/>} />
                 <Route path="/ProjetMsw/:id" children={<MswwPage />} />
                 <Route path="/CGU" children={<Cgu/>} />
+                <Route exact path="/link" render={() => (window.location = "www.linkedin.com/in/loicsun")} />
             </Switch>
             {/*{background && <Route path="/img/:id" children={<Modal />} />}*/}
         </div>
