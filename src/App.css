@@ -135,7 +135,14 @@ position: fixed;
 
 .expo{
   margin-right:2em;
-  height:20em;
+  height:3em;
+}
+
+.expo1{
+  margin-right:2em;
+  height:3em;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.425);
+
 }
 
 .cuttinText {
@@ -152,6 +159,21 @@ position: fixed;
   text-align: center;
 }
 
+
+.cuttinText1 {
+  /*
+ Ensure background is added first
+ */
+  background: linear-gradient(36deg, rgba(131,58,180,1) 16%, rgba(253,29,29,1) 49%, rgba(255,254,8,1) 100%);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+
+  font-weight: bold;
+  
+}
+
 .cuttinText2 {
   background: linear-gradient(36deg, rgba(15,181,247,1) 0%, rgba(12,245,107,1) 21%, rgba(76,191,241,1) 44%, rgba(255,255,255,1) 69%, rgba(0,212,255,1) 100%);
   background-attachment: fixed;
@@ -160,7 +182,7 @@ position: fixed;
 
 
   font-weight: bold;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .strat{

@@ -20,8 +20,6 @@ function ModalSwitch() {
             <Switch location={background || location}>
                 <Route exact path="/" children={<App/>} />
                 <Route path="/ProjetMsw/:id" children={<MswwPage />} />
-                {/* <Route path="/gallery" children={<Gallery />} />
-                <Route path="/img/:id" children={<ImageView />} />*/}
                 <Route path="/CGU" children={<Cgu/>} />
             </Switch>
             {/*{background && <Route path="/img/:id" children={<Modal />} />}*/}

@@ -16,10 +16,6 @@ import Lima from "./static/images/Banner02.png";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import PropTypes from "prop-types";
-import {useTheme} from "@material-ui/core";
-import SwipeableViews from 'react-swipeable-views';
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import WaitIll from "./Component/buldo/waittingComp";
 import { useEffect } from 'react';
@@ -31,10 +27,8 @@ import { useEffect } from 'react';
 
 
 export default function MswwPage() {
-    const theme = useTheme();
-    const [value, setValue] = React.useState(0);
-    const handleChange = (event,newValue) => { setValue(newValue)};
-    const handleChangeIndex = (index) => { setValue(index)};
+   
+    /* start to top page */
     
     const ScrollToTop = ({ children }) => {
         const { pathname } = useLocation();
@@ -46,8 +40,9 @@ export default function MswwPage() {
         return children || null;
       };
 
+/* Data */
 
-    const IMAGES = [
+    const DATAS = [
 
         { id: 0,
             title: "MS WOODWORK",
@@ -172,14 +167,8 @@ export default function MswwPage() {
 
 
 
-    function a11yProps(index) {
-        return {
-            id: `full-width-tab-${index}`,
-            'aria-controls': `full-width-tabpanel-${index}`,
-        };
-    }
     let { id } = useParams();
-    let image = IMAGES[parseInt(id, 10)];
+    let image = DATAS[parseInt(id, 10)];
     if (!image) return <div style={{ height:"80rem", padding:"2em", paddinTop:"50em"}}>
       <Typography className="cuttinText2" 
       style={{  color: "rgba(12,6,6,0.62)",fontSize:"10em",}}> 
@@ -221,25 +210,23 @@ export default function MswwPage() {
                         <Grid spacing={1} xs={12} sm={3} lg={2} fixed  >
 
                                 <div position="static" color="default" style={{backgroundColor:"none", marginTop:"2em"}}>
-                                    <Tabs  value={value} onChange={handleChange}  indicatorColor="secondary" textColor="light" orientation="vertical"  variant="fullWidth" aria-label="full width tabs example">
-                                    </Tabs>
-                                    <Tab label={image.label01}   {...a11yProps(0)} />
+                    
                                 </div>
                         </Grid>
 
                            {/* comptenue des rubriques*/}
 
-                        <Grid xs={12} sm={4} lg={10}>
-                            <SwipeableViews axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                                            index={value} onChangeIndex={handleChangeIndex} >
-                                <TabPanel value={value} index={0} dir={theme.direction}>
-                                    <Grid  container md={11} lg={12} xs={12}
-                                          style={{ textAlign:"center"}}>
-
-                                        <h1 className="cuttinText" style={{ fontStyle: "bold", fontSize:"3em", top:"30em"}}>{image.textes}</h1>
+                        <Grid xs={12} sm={12} lg={10}>
+                                    <Grid  container md={11} lg={12} xs={12} >
+                                        <h1 className="cuttinText1" style={{ fontStyle: "bold", fontSize:"3em", top:"30em"}}>{image.textes}</h1>
                                     </Grid>
-                                    <Grid xs={12} sm={6} lg={12} style={{fontSize:"2em"}}>
-                                    {image.texte01}
+                                    
+                                    <Typography> {image.texte02} </Typography><br/><br/><br/>
+
+                                    <Grid container style={{fontSize:"2em"}}>
+                                        <Grid lg={5} >{image.texte01}</Grid>
+                                        <Grid lg={6} className="expo1" style={{backgroundImage: `url(${image.sample01})`, backgroundSize: "cover"}}></Grid>
+                                    
                                     </Grid>
 
                                     <Grid xs={12} sm={8} style={{fontSize:"2em"}}>
@@ -247,18 +234,19 @@ export default function MswwPage() {
                                             {image.texte010}
                                         </Typography>
                                     </Grid>
-                                    <Grid container spacing={2} >
 
-                                        <Grid xs={12} sm={5} lg={12} >
-                                            <h1 className="cuttinText" style={{ fontStyle: "bold", fontSize:"3em", top:"30em"}} >{image.title02}</h1>
-                                             {image.title02}
+                                    <Grid xs={12} sm={5} lg={12} >
+                                            <h1 className="cuttinText1" style={{ fontStyle: "bold", fontSize:"3em", top:"30em"}} >{image.title02}</h1>
                                         </Grid>
-                                        <Grid xs={12} sm={8}>
-                                            <Typography>
+                                        
+                                        <Grid container style={{fontSize:"2em"}}>
+                                        <Grid lg={6} className="expo1" style={{backgroundImage: `url(${image.sample01})`, backgroundSize: "cover"}}></Grid>
+                                        <Grid lg={5} ><Typography>
                                                 {image.texte02}
                                             </Typography>
-                                        </Grid>
+                                            </Grid>
                                     </Grid>
+              
 
 
                                         <Grid item xs={12} sm={12} container direction="row" spacing={5} style={{marginTop:"5em"}}>
@@ -286,8 +274,6 @@ export default function MswwPage() {
                                             </Grid>
                                         </Grid>
 
-                                 </TabPanel>
-                            </SwipeableViews>
                         </Grid>
                     </Grid>
                 </div>
