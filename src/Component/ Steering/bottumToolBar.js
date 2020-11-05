@@ -4,7 +4,6 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-
 class BottomToolBarApp extends React.Component {
     render() {
         return <div>
