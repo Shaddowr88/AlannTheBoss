@@ -3,7 +3,6 @@ import Grid from "@material-ui/core/Grid";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import { Typography } from '@material-ui/core';
 
 
 class BottomToolBarApp extends React.Component {
