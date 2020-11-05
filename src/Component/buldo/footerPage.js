@@ -18,7 +18,6 @@ class PresentationPage extends React.Component {
                     progredi debeat. Numne, si Coriolanus habuit amicos, ferre contra patriam
                     arma illi cum Coriolano debuerunt?
                 </Typography>
-
             </Grid>
             {/*  <Grid item xs={12} sm={6} container spacing={1}>
                    <CardGrid/>
@@ -26,7 +25,6 @@ class PresentationPage extends React.Component {
             </Grid>
             */}
         </Grid>
-
     }
 }
 export default PresentationPage;

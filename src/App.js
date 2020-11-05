@@ -7,11 +7,11 @@ import $ from "jquery";
 import BannerIndex from "./Component/buldo/IndexBanner";
 import Hidden from "@material-ui/core/Hidden";
 import BottomToolBarApp from "./Component/ Steering/bottumToolBar";
-import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import DEsignPage from "./Component/buldo/DEsignPage";
 import INTRO from "./static/images/Banner.png";
+import {Link} from "react-router-dom";
 
 
 class App extends Component {
@@ -19,7 +19,7 @@ class App extends Component {
         $(document).ready(function() {
             $(window).scroll(function() {
                 if ($(document).scrollTop() > 40) {
-                    $(".Welcome").fadeIn( 200 ).css({background: "#102D40", boxShadow: "-1px 8px 17px 6px rgba(0,0,0,0.28)"});
+                    $(".Welcome").fadeIn( 600 ).css({background: "#102D40", boxShadow: "-1px 8px 17px 6px rgba(0,0,0,0.28)"});
                     $(".NavName").css("font-weight", "bold");
                     $(".homeB").css("display", "contents")
                 } else{
@@ -33,12 +33,12 @@ class App extends Component {
                 } else {
                     $(".mydiv2").fadeOut( "slow" );
                 }
-                if ($(document).scrollTop() > 1890) {
-                    $(".mydiv").show( 500 );
+                if ($(document).scrollTop() > 1900) {
+                   /*  $(".mydiv").show( 500 );*/
                     $(".mydiv").fadeIn( 1000 );
-                } else {
+                } /*else {
                     $(".mydiv").fadeOut( "slow" );
-                }
+                */
                 if ($(document).scrollTop() < 450) {
                     $(".img").fadeIn( 1500 );
                 }else{
@@ -56,7 +56,11 @@ class App extends Component {
                     {/* -------------------------------------------------- introduction Component -------------------------------------------------- */}
                     <BannerIndex/>
                     {/* -------------------------------------------------- Skill component -------------------------------------------------- */}
-                    <Container  id="section_1" style={{ color:"white", paddingTop:"7em", paddingLeft:"3em", }}>
+                    <Container  id="section_1" style={{color:"white", paddingTop:"7em", paddingLeft:"3em" }}>
+                    <Grid md={12} xs={4}></Grid>
+                                    <Grid md={12} xs={1}>
+                                    <Typography  style={{ fontStyle: "bold", fontSize:"6em"}} > SKILL </Typography>
+                                </Grid>
                         <IntroPage/>
                     </Container>
 
@@ -64,16 +68,14 @@ class App extends Component {
                     <Container id="section_2">
                         <Hidden only={'xs'}>
                             <div  md={12} xs={4}  style={{height: "20em",color:"white",
-                            marginLeft:"1em", marginTop:"5em", paddingTop:"2em", marginBottom:"5em"}}>
+                            marginLeft:"1em", marginTop:"5em", paddingTop:"2em", marginBottom:"2em"}}>
                                 <Grid md={12} xs={4}></Grid>
                                     <Grid md={12} xs={1}>
-                                    <p style={{fontStyle: "italic", fontWeight:"lighter", fontSize:"2em"}} className="cuttinText"> Les bons </p>
-                                    <Typography className="cuttinText" style={{ fontStyle: "bold", fontSize:"6em"}} > DESIGNs </Typography>
+                                    <Typography  style={{ fontStyle: "bold", fontSize:"6em"}} > DESIGN </Typography>
                                 </Grid>
                                 <Grid md={12} xs={12} >
-                                    <p style={{fontStyle: "italic", fontWeight:"lighter", fontSize:"2em"}} className="cuttinText">
-                                    ne dépendent pas du support que l’on utilise. Pour créer un design de qualité,
-                                    il faut bien réfléchir à ce que l’on veut faire et au cadre dans lequel cela s’inscrit, avant même de commencer.
+                                    <p style={{fontStyle: "bold", fontWeight:"lighter", fontSize:"2em"}} className="cuttinText">
+                                        Pour créer un design de qualité,il faut bien réfléchir à ce que l’on veut faire et au cadre dans lequel cela s’inscrit, avant même de commencer.
                                     </p>
                                     <p style={{fontStyle: "italic", fontWeight:"lighter", fontSize:"2em"}} className="cuttinText"> - S.K  </p>
                                 </Grid>
@@ -95,7 +97,7 @@ class App extends Component {
                             </Hidden>
 
                             <Hidden only={'xs'}>
-                                <Grid className="mydiv" md={10} xs={12} sm={12}>
+                               { /*  <Grid classN }}ame="mydiv" style={{display:"none"}} md={10} xs={12} sm={12}>
                                     <p className="cuttinText" style={{color:"white", fontStyle: "bold", fontWeight:"lighter", fontSize:"2em"}}>
                                         Mesurer la progression du </p>
                                         <Typography className="cuttinText" style={{ fontStyle: "bold", fontSize:"6em", top:"30em"}} > DEVELOPPEMENT </Typography>
@@ -105,10 +107,15 @@ class App extends Component {
                                     <p style={{fontStyle: "italic", fontWeight:"lighter", fontSize:"2em"}} className="cuttinText">
                                         - Bill Gates
                                     </p>
-                                </Grid>
+                                </Grid>*/}
+
+                                <Grid className="mydiv" style={{display:"none", paddingLeft:"6em"}} md={10} xs={12} sm={12}>
+                                 <Typography  style={{ fontStyle: "bold", fontSize:"6em", top:"30em"}} > DEVELOPPEMENT </Typography>
+                                 </Grid>
                             </Hidden>
                         </Grid>
                     </Container>
+                    
                     <ProjectPage />
 
                     <br/><br/> <br/> <br/> <br/><br/><br/> <br/> <br/> <br/>
@@ -127,9 +134,10 @@ class App extends Component {
                     </Container>
 
                 </div>
-        <div style={{textAlign:"center", fontWeight:"lighter", color:"white"}} >
-        <p>Copyright © 2019 - Loic SUNVE</p>
-        </div>
+                <div style={{textAlign:"center"}} >
+                <Link to={{ pathname:`/CGU`,}} style={{textDecoration:"none", fontWeight:"bold", color:"white"}} > <p  >Copyright © 2019 - Loic SUNVE - Tous droits réservés </p>
+                </Link>
+                </div>
             </div>
         );
     }

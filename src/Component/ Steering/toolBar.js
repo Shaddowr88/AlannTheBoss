@@ -16,7 +16,7 @@ import '../../App.css'
 class ToolBarApp extends React.Component {
     render() {
         return <ScrollspyNav zIndex="tooltip"
-            scrollTargetIds={["section_1", "section_2", "section_3"]}
+            scrollTargetIds={["section_1", "section_2", "section_3", "section_4"]}
             activeNavClass="is-active" >
             <div className="navBar" >
                 <div className="Welcome" ></div>
@@ -27,7 +27,7 @@ class ToolBarApp extends React.Component {
                         </Button>
                         <Button style={{color: "white",}}
                                 href="#section_1" color="inherit" variant="h6" className="NavName">
-                            SKILLS
+                            SKILL
                         </Button>
                         <Button style={{color: "white",}} href="#section_2" color="inherit" variant="h6" className="NavName">
                             DESIGN

@@ -26,11 +26,8 @@ class DEsignPage extends React.Component {
             </Grid>
 
             <Grid item xs={12} sm={6} md={3} spacing={3} container zIndex="modal"
-                  direction="row"
-                  justify="center"
-                  alignItems="center"
-                  style={{ borderColor: "#F27127", color: "#f5f5f5",
-                      borderRadius: "8px", paddingTop:"6em" }}>
+                  direction="row" justify="center" alignItems="center"
+                  style={{ borderColor: "#F27127", color: "#f5f5f5", borderRadius: "8px", paddingTop:"6em" }}>
 
                 <CardGrid/>
             </Grid>
