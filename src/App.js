@@ -49,18 +49,14 @@ class App extends Component {
     }
     render() {
         return (
-            <div>
+            <>
                 {/* -------------------------------------------------- Nav Component -------------------------------------------------- */}
                 <ToolBarApp />
-                <div>
+                <div style={{color:"white", paddingTop:"15vw", paddingLeft:"3em" }}>
                     {/* -------------------------------------------------- introduction Component -------------------------------------------------- */}
                     <BannerIndex/>
                     {/* -------------------------------------------------- Skill component -------------------------------------------------- */}
-                    <Container  id="section_1" style={{color:"white", paddingTop:"7em", paddingLeft:"3em" }}>
-                    <Grid md={12} xs={4}></Grid>
-                                    <Grid md={12} xs={1}>
-                                    <Typography  style={{ fontStyle: "bold", fontSize:"6em"}} > SKILL </Typography>
-                                </Grid>
+                    <Container  id="section_1" style={{color:"white", paddingTop:"10vw", paddingLeft:"3em" }}>
                         <IntroPage/>
                     </Container>
 
@@ -71,7 +67,7 @@ class App extends Component {
                             marginLeft:"1em", marginTop:"5em", paddingTop:"2em", marginBottom:"2em"}}>
                                 <Grid md={12} xs={4}></Grid>
                                     <Grid md={12} xs={1}>
-                                    <Typography  style={{ fontStyle: "bold", fontSize:"6em"}} > DESIGN </Typography>
+                                   {/* <Typography  style={{ fontStyle: "bold", fontSize:"6em"}} > DESIGN </Typography>*/}
                                 </Grid>
                                 <Grid md={12} xs={12} >
                                     <p style={{fontStyle: "bold", fontWeight:"lighter", fontSize:"2em"}} className="cuttinText">
@@ -138,7 +134,7 @@ class App extends Component {
                 <Link to={{ pathname:`/CGU`,}} style={{textDecoration:"none", fontWeight:"bold", color:"white"}} > <p  >Copyright © 2019 - Loic SUNVE - Tous droits réservés </p>
                 </Link>
                 </div>
-            </div>
+            </>
         );
     }
 }
