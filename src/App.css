@@ -69,22 +69,12 @@ button {
 /* box link */
 
 .script-car-box {
-
-  border: solid;
-  margin: 5px;
-  border-radius:20px;
-  text-align: center;
-  line-height:2em;
-  padding-left: 3em;
-  padding-right: 3em;
-  height: 7em;
-  width: 20em;
-  box-shadow: 5px 1px 6px  darkslategrey;
+  
 }
 
 .script-car-box:hover {
-  background: #F2A922;
-  box-shadow: 5px 1px 1em lightgrey;
+  background: #F27127;
+
 
 }
 

@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Switch, Route, useLocation,} from "react-router
 import App from "./App";
 import Cgu from "./Component/buldo/cgu";
 import MswwPage from "./msww";
+import indexData from "./Component/data/datas";
 
 export default function ModalGalleryExample() {
     return (
@@ -18,7 +19,7 @@ function ModalSwitch() {
     return (
         <div>
             <Switch location={background || location}>
-                <Route exact path="/" children={<App/>} />
+                <Route exact path="/" render={(props)=> <App {...props} projs={indexData}/>}/>
                 <Route path="/ProjetMsw/:id" children={<MswwPage />} />
                 <Route path="/CGU" children={<Cgu/>} />
                 <Route exact path="/link" render={() => (window.location = "www.linkedin.com/in/loicsun")} />

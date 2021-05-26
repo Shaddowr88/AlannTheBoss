@@ -33,42 +33,42 @@ const useStyles = makeStyles((theme) => ({
 const IMAGES = [
     { id: 0, title: "MS WOODWORK",textes: "Artisan Menuisier", color: "DarkOrchid", src:MSWW },
     { id: 3, title: "DEL'ILE'S DES DOUDOUS", textes: "Événementiel", color: "Tomato", src:delilce },
-  //  { id: 4, title: "SAMOVAR", textes: "presentation de SAMOVAR", color: "Tomato", src:B4S },
 ];
 
 
-export default function CardGrid() {
+export default function CardDev() {
     const classes = useStyles();
     return (
-        <div   className={classes.root} style={{paddinTop:"6em"}} >
+        <div className={classes.root} >
             {IMAGES.map(i => (
-            <Grid container spacing={2} key={i.id} href={{ pathname:`/ProjetMsw/${i.id}`,}} className="script-car-box" style={{margin: "2em"}} >
-                    <Grid item xs={3}>
-                        <div className={classes.image} >
+            <Grid container spacing={2} className="script-car-box"
+                  style={{marginBottom: "2em"}} >
+                <Grid item xs={3}>
+                    <div className={classes.image} >
+                        <Link
+                            style={{textDecoration: "none", color:"white"}}
+                            key={i.id} to={{ pathname:`/ProjetMsw/${i.id}`,}}>
+                            <img color={i.color} src={i.src} className={classes.img} alt="complex"  />
+                        </Link>
+                    </div>
+                </Grid>
+                <Grid item xs={9} sm container>
+                    <Grid item xs container direction="column" spacing={2}>
+                        <Grid item xs>
                             <Link
                                 style={{textDecoration: "none", color:"white"}}
-                                key={i.id} to={{ pathname:`/ProjetMsw/${i.id}`,}}>
-                                <img color={i.color} src={i.src} className={classes.img} alt="complex"  />
-                            </Link>
-                        </div>
-                    </Grid>
-                    <Grid item xs={9}  sm container>
-                        <Grid item xs container direction="column" spacing={2}>
-                            <Grid item xs>
-                                <Link
-                                    style={{textDecoration: "none", color:"white"}}
-                                    key={i.id}
-                                    to={{ pathname:`/ProjetMsw/${i.id}`,}}>
-                                    <Typography gutterBottom variant="subtitle1">
+                                key={i.id}
+                                to={{ pathname:`/ProjetMsw/${i.id}`,}}>
+                                <Typography gutterBottom variant="subtitle1" >
                                     {i.title}
-                                     </Typography>
-                                    <Typography variant="body2" gutterBottom style={{marginBottom:"2em"}} >
-                                        {i.textes}
-                                    </Typography>
-                                </Link>
-                            </Grid>
+                                </Typography>
+                                <Typography variant="body2" gutterBottom style={{marginBottom:"2em"}} >
+                                 {i.textes}
+                                </Typography>
+                             </Link>
                         </Grid>
                     </Grid>
+                </Grid>
              </Grid>
            ))}
         </div>
